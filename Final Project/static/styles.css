@@ -1,0 +1,26 @@
+.header {
+    padding-top: 10px;
+    background-color: black;
+    color: cornsilk;
+    font-family: 'Aclonica';
+}
+.instructions {
+    font-family: 'B612';
+    font-size: 20;
+}
+.homeform {
+    padding-top: 100px;
+    font-family: 'B612';
+    font-size: 15;
+}
+.gobutton {
+    color: cornsilk;
+    background-color: black;
+}
+body {
+    margin: 0%;
+    text-align: center;
+}
+div {
+    height: fit-content;
+}

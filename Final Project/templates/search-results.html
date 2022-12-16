@@ -1,0 +1,21 @@
+<html>
+<head>
+    <title>How well do you know {{artist_name}}?</title>
+    <!--Keep an eye on this-->
+    <link rel="stylesheet" href="{{ url_for('static',filename='styles.css') }}" type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Aclonica|B612' rel='stylesheet'>
+</head>
+<body>
+    <div class="header">
+        <h1>How well do you know them?</h1>
+    </div>
+    <form action="gresponse" method="POST" class="homeform">
+        <label for="guess"> 
+            <img src="{{url}}" alt="{{artist_name}}">
+        </label>
+        <br>
+        <input type="text" id="guess" name="guess">
+        <input type="submit" value="Submit" name="gobtn" class='gobutton'>
+    </form> 
+</body>
+</html>

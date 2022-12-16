@@ -1,0 +1,22 @@
+<html>
+<head>
+    <title>How well do you know them?</title>
+    <!--Keep an eye on this-->
+    <link rel="stylesheet" href="{{ url_for('static',filename='styles.css') }}" type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Aclonica|B612' rel='stylesheet'>
+</head>
+<body>
+    <div class="header">
+        <h1>How well do you know them?</h1>
+    </div>
+    <div class='instructions'>
+        <p >Guess the name of your artist's work by absurd pictures that might not make sense!</p>
+    </div>
+    <form action="gresponse" method="GET" class="homeform">
+        <label for="artist_name">Artist Name: </label>
+        <input type="text" id="artist_name" name="artist_name">
+        <input type="submit" value="Go" name="gobtn" class='gobutton'>
+    </form>
+    <p class='instructions' >Disclaimer: These can be extremely absurd. So you need to think hard! (You could get the artist's name itself as well)</p> 
+</body>
+</html>

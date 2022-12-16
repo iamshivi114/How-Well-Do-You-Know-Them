@@ -1,0 +1,22 @@
+<html>
+<head>
+    <title>Let's see how you did?</title>
+    <!--Keep an eye on this-->
+    <link rel="stylesheet" href="{{ url_for('static',filename='styles.css') }}" type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Aclonica|B612' rel='stylesheet'>
+</head>
+<body>
+    <div class="header">
+        <h1>How well do you know them?</h1>
+    </div>
+    <div class='instructions'>
+        <h1>Results</h1>
+        <p>Correct Answer: {{result}}</p>
+        <p>Your Answer: {{guess}}</p>
+        <p>{{message}}</p>
+    </div>
+    <form action="" method="get" class="homeform">
+        <input type="submit" value="Back to Home" name="gobtn" class='gobutton'>
+    </form>
+</body>
+</html>
